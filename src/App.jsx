@@ -5,6 +5,7 @@ import ContactsPage from "./pages/ContactsPage";
 import UserPage from "./pages/UserPage";
 import TestPage from "./pages/TestPage";
 import "./app.css";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route
           path="/"
           element={<HomePage />}
+        />
+        <Route
+          path="/products/:productId"
+          element={<ProductPage />}
         />
         <Route
           path="/about"
