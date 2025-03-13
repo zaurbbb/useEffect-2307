@@ -11,7 +11,6 @@ function ProductPage() {
           "https://api.escuelajs.co/api/v1/products/" + productId
         );
         setProduct(response.data);
-        console.log(response);
       } catch (error) {
         console.error(error);
       }
