@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactsPage from "./pages/ContactsPage";
@@ -9,7 +9,7 @@ import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav>
         <Link to="/">Главная</Link>
         <Link to="/about">О нас</Link>
@@ -42,7 +42,7 @@ function App() {
           element={<TestPage />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
